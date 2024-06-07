@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Sugbo Eats</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="location">Location</string>
+    <string name="operating_hours">Operating Hours</string>
+    <string name="resto_description">Description</string>
+    <string name="resto_menu">Menu</string>
+    <string name="menu_item">Menu Item</string>
+    <string name="menu_description">Description</string>
+    <string name="menu_price">Price</string>
 </resources>
