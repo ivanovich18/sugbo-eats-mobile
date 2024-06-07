@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.bscpe3g.sugboeats" />
+                  <option name="mobileSdkAppId" value="1:184395993549:android:91ff7b8ddf73f84e147484" />
+                  <option name="projectId" value="sugbo-eats" />
+                  <option name="projectNumber" value="184395993549" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
