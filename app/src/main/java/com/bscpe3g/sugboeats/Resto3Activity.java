@@ -9,23 +9,24 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Resto1Activity extends AppCompatActivity {
+public class Resto3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_resto1);
+        setContentView(R.layout.activity_resto3);
 
         List<MenuItem> menuItems = new ArrayList<>();
-        menuItems.add(new MenuItem("Humba", "A Cebuano classic dish features tender pork belly slow-cooked in various rich sauce.", 320.00, R.drawable.humba));
-        menuItems.add(new MenuItem("Bam-i", "A harmonious blend of pancit canton and bihon noodles, stir-fried with a medley of different kinds of meat.", 180.00, R.drawable.bam_i));
-        menuItems.add(new MenuItem("Tinola with Papaya", "A comforting chicken soup simmered with green papaya and malunggay leaves.", 160.00, R.drawable.tinola_with_papaya));
-        menuItems.add(new MenuItem("Lechon (1 kg)", "A whole roasted pig with crispy skin and juicy meat, a staple in Filipino celebrations.", 950.00, R.drawable.lechon));
-        menuItems.add(new MenuItem("Pancit Palabok", "A festive noodle dish topped with a flavorful shrimp sauce, smoked fish flakes, boiled eggs, and chicharon.", 220.00, R.drawable.palabok));
-        menuItems.add(new MenuItem("Bicol Express", "A fiery dish from the Bicol region, known for its spicy coconut milk-based sauce with chili peppers and pork.", 280.00, R.drawable.bicol_xpress));
+        menuItems.add(new MenuItem("Pork Barbecue", "Pork Barbecue is a dish composed of marinated pork slices that are skewered and grilled", 200.00, R.drawable.pork_bbq));
+        menuItems.add(new MenuItem("Isaw", "Isaw, made from barbecued chicken intestines, is a beloved Filipino street food known for its unique flavor.", 150.00, R.drawable.isaw));
+        menuItems.add(new MenuItem("Betamax", "Grilled coagulated chicken or pork blood, named after its resemblance to Betamax tapes.", 150.00, R.drawable.betamax));
+        menuItems.add(new MenuItem("Adidas", "Grilled chicken feet, a popular street food known for its chewy texture and savory flavor.", 130.00, R.drawable.adidas));
+        menuItems.add(new MenuItem("Kwek-Kwek", "Deep-fried quail eggs coated in bright orange batter, served with vinegar or sweet and sour sauce.", 140.00, R.drawable.kwek_kwek));
+        menuItems.add(new MenuItem("Gimbap", "Korean dish made from cooked rice, vegetables, fish, and meat rolled in gim dried sheets of seaweed.", 180.00, R.drawable.gimbap));
 
         RecyclerView recyclerView = findViewById(R.id.menu_items);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

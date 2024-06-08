@@ -1,11 +1,34 @@
 <resources>
     <string name="app_name">Sugbo Eats</string>
-    <string name="restaurant_name">Restaurant Name</string>
-    <string name="location">Location</string>
-    <string name="operating_hours">Operating Hours</string>
-    <string name="resto_description">Description</string>
-    <string name="resto_menu">Menu</string>
+    <string name="food_description_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus, ex in finibus fermentum, dolor.</string>
+    <string name="button_make_reservation">Make a Reservation</string>
+    <string name="restaurant_menu_text">Menu</string>
     <string name="menu_item">Menu Item</string>
     <string name="menu_description">Description</string>
     <string name="menu_price">Price</string>
+
+    <string name="restaurant_one_name">Heritage Table</string>
+    <string name="restaurant_one_location">Colon Street, Cebu City</string>
+    <string name="restaurant_one_operating_hours">10:00 am - 9:00 pm</string>
+    <string name="restaurant_one_description">Heritage Table offers a nostalgic journey through Cebu’s culinary past, serving traditional dishes that have been passed down through generations.</string>
+
+    <string name="restaurant_two_name">Fradel and Spies</string>
+    <string name="restaurant_two_location">MJ Cuenco cor R Palma St, Cebu City</string>
+    <string name="restaurant_two_operating_hours">8:00 am - 9:00 pm</string>
+    <string name="restaurant_two_description">Fradel and Spies Restaurant delights diners with a diverse menu featuring delectable satay, mouthwatering pizza, and more, all crafted to perfection.</string>
+
+    <string name="restaurant_three_name">Kasikas</string>
+    <string name="restaurant_three_location">Fuente Osmeña Avenue, Cebu City</string>
+    <string name="restaurant_three_operating_hours">10:00 am - 10:00 pm</string>
+    <string name="restaurant_three_description">Experience the best of Filipino and foreign cuisines at Kasikas Restaurant, located in the bustling streets of Fuente. Indulge in authentic flavors!</string>
+
+    <string name="restaurant_four_name">Sugbusog Grill House</string>
+    <string name="restaurant_four_location">Parkmall, Mandaue City</string>
+    <string name="restaurant_four_operating_hours">6:00 pm - 11:00 pm</string>
+    <string name="restaurant_four_description">Sugbusog Grill House offers authentic Cebuano grilled dishes. Known for its flavorful marinades and fresh seafood, it\'s the perfect place for a casual yet memorable dining experience.</string>
+
+    <string name="restaurant_five_name">Chef\’s Tasty</string>
+    <string name="restaurant_five_location">Mactan Newtown, Lapu-lapu City</string>
+    <string name="restaurant_five_operating_hours">1:00 pm - 10:00 pm</string>
+    <string name="restaurant_five_description">Chef\'s Tasty serves a delightful array of Filipino favorite foods, offering authentic flavors and heartwarming dishes that bring the taste of home to every meal."</string>
 </resources>
