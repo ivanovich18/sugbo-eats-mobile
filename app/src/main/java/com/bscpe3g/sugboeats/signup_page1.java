@@ -13,6 +13,15 @@ public class signup_page1 extends AppCompatActivity {
     private EditText editTextText;
     private EditText editTextText2;
     private AppCompatButton button;
+import android.os.Bundle;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class signup_page1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +72,15 @@ public class signup_page1 extends AppCompatActivity {
                 // Start the activity
                 startActivity(intent);
             }
+        });
+    }
+}
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_signup_page1);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
         });
     }
 }

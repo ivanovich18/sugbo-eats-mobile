@@ -129,4 +129,5 @@
         <item name="android:textColor">#000000</item>
     </style>
 
+    <color name="white">#FFFFFF</color>
 </resources>
