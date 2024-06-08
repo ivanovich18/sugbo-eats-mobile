@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Sugbo Eats</string>
+    <string name="sugbo_eats"> SUGBO EATS </string>
+    <string name="restaurants"> Restaurants </string>
 </resources>
