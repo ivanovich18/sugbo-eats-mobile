@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "184395993549",
+    "project_id": "sugbo-eats",
+    "storage_bucket": "sugbo-eats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184395993549:android:91ff7b8ddf73f84e147484",
+        "android_client_info": {
+          "package_name": "com.bscpe3g.sugboeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184395993549-99pjg8ql72kbb0ng66ictbmsa6cdhtja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA75zfc4BJlhK3YHc7AFVuVEsMSVX0RhaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184395993549-99pjg8ql72kbb0ng66ictbmsa6cdhtja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
