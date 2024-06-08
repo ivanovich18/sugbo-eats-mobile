@@ -67,4 +67,17 @@
     <string name="contact_lit"> contact@restaurant.com </string>
     <string name="phone_num"> 0912-345-6789 </string>
     <string name="return_to_h"> Return to Home </string>
+
+    <string name="sugbo_eats">
+        Sugbo Eats
+    </string>
+    <string name="heading_one">Easy</string>
+    <string name="heading_two">Convenient</string>
+    <string name="heading_three">Enjoy</string>
+
+    //Description
+    <string name="desc_one">Effortlessly book your favorite tables with Sugbo Eats.</string>
+    <string name="desc_two">Dine your way - alfresco, indoors, or with special requests.</string>
+    <string name="desc_three">Enjoy hassle-free booking confirmations and QR code check-ins.</string>
+
 </resources>
