@@ -1,24 +1,43 @@
 package com.bscpe3g.sugboeats;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class signup_page2 extends AppCompatActivity {
+    private EditText emailText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup_page2);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        emailText = findViewById(R.id.emailText);
+
+        // Add touch listener on emailText to detect touch on the drawable
+        emailText.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if (event.getRawX() >= (emailText.getRight() - emailText.getCompoundDrawables()[2].getBounds().width())) {
+                        // Clicked on the drawable (right)
+                        emailText.setText("");
+                        return true;
+                    }
+                }
+                return false;
+            }
         });
+    }
+
+    // Method to handle back navigation
+    public void goBack(View view) {
+        // Navigate back to signup_page1
+        Intent intent = new Intent(signup_page2.this, signup_page1.class);
+        startActivity(intent);
+        finish(); // Optional: finish the current activity to remove it from the back stack
     }
 }
