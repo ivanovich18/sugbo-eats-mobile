@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_screen"
@@ -7,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Background View -->
     <View
         android:id="@+id/rec_background"
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
+    <ImageView
         android:id="@+id/search"
         android:layout_width="40dp"
         android:layout_height="39dp"
@@ -51,106 +51,161 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sugbo_eats" />
 
-
     <View
         android:id="@+id/bottombar"
-        android:layout_width="424dp"
-        android:layout_height="88dp"
+        android:layout_width="410dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/rectangle_2homescreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imagehome"
-        android:layout_width="47dp"
-        android:layout_height="50dp"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="3dp"
         android:background="@null"
         android:src="@drawable/homeicon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintVertical_bias="0.777" />
 
     <ImageView
         android:id="@+id/imagesched"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="5dp"
         android:background="@null"
         android:src="@drawable/timeicon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imagefave"
-        android:layout_width="52dp"
-        android:layout_height="50dp"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:background="@null"
         android:src="@drawable/favicon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageprof"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:background="@null"
         android:src="@drawable/proficon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.856"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="1.0" />
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rec_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <!-- ConstraintLayout for Sale 1 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/homescreen_sale1"
+                    android:layout_width="256dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/homescreensale1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/off_on_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#66FFFFFF"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/off_on_week"
+                    android:textAppearance="@style/off_on_week"
+                    app:layout_constraintBottom_toBottomOf="@id/homescreen_sale1"
+                    app:layout_constraintEnd_toEndOf="@id/homescreen_sale1"
+                    app:layout_constraintHorizontal_bias="0.576"
+                    app:layout_constraintStart_toStartOf="@id/homescreen_sale1"
+                    app:layout_constraintTop_toTopOf="@id/homescreen_sale1"
+                    app:layout_constraintVertical_bias="0.851" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/homescreen_sale2"
+                    android:layout_width="256dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/homescreensale2" />
+
+                <TextView
+                    android:id="@+id/off_for_4_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#66FFFFFF"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/off_for_4_5"
+                    android:textAppearance="@style/off_for_4_5"
+                    app:layout_constraintBottom_toBottomOf="@id/homescreen_sale2"
+                    app:layout_constraintEnd_toEndOf="@id/homescreen_sale2"
+                    app:layout_constraintStart_toStartOf="@id/homescreen_sale2"
+                    app:layout_constraintTop_toTopOf="@id/homescreen_sale2"
+                    app:layout_constraintVertical_bias="0.851" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<ScrollView
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintBottom_toTopOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rec_background">
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/homescreen_sale1"
-                android:layout_width="256dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/homescreensale1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/homescreen_sale2"
-                android:layout_width="256dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/homescreensale2"
-                app:layout_constraintStart_toEndOf="@id/homescreen_sale1"
-                app:layout_constraintTop_toTopOf="parent" />
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/restaurants"
@@ -163,22 +218,34 @@
                 android:textAppearance="@style/restaurants"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/homescreen_sale1" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/resto1"
-                android:layout_width="355dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/rounded_corners"
-                android:clipToOutline="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/homescreenresto1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/restaurants" />
+          <ImageView
+              android:id="@+id/resto1"
+              android:layout_width="355dp"
+              android:layout_height="120dp"
+              android:layout_marginStart="28dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/rounded_corners"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/homescreenresto1"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/restaurants" />
 
-            <ImageView
+            <TextView
+                android:id="@+id/hom_heritage_ta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/hom_heritage_ta"
+                android:textAppearance="@style/hom_heritage_ta"
+                app:layout_constraintStart_toStartOf="@id/resto1"
+                app:layout_constraintTop_toTopOf="@id/resto1" />
+
+        <ImageView
                 android:id="@+id/resto2"
                 android:layout_width="355dp"
                 android:layout_height="120dp"
@@ -190,6 +257,18 @@
                 android:src="@drawable/homescreenresto2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/resto1" />
+
+          <TextView
+                android:id="@+id/hom_fradel_and_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/hom_fradel_and_"
+                android:textAppearance="@style/hom_fradel_and_"
+                app:layout_constraintStart_toStartOf="@id/resto2"
+                app:layout_constraintTop_toTopOf="@id/resto2" />
 
             <ImageView
                 android:id="@+id/resto3"
@@ -204,46 +283,70 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/resto2" />
 
-            <View
+            <TextView
+                android:id="@+id/hom_kasikas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/hom_kasikas"
+                android:textAppearance="@style/hom_kasikas"
+                app:layout_constraintStart_toStartOf="@id/resto3"
+                app:layout_constraintTop_toTopOf="@id/resto3" />
+
+            <ImageView
                 android:id="@+id/resto4"
                 android:layout_width="355dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/rectangle_2homescreen"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/homescreenresto4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/resto3"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@id/resto3" />
 
-            <View
-                android:id="@+id/resto5"
-                android:layout_width="355dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/rectangle_2homescreen"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/resto4"
-                app:layout_constraintVertical_bias="0.0" />
+          <TextView
+              android:id="@+id/hom_sugbusog_gr"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="12dp"
+              android:layout_marginTop="84dp"
+              android:gravity="center_horizontal|top"
+              android:text="@string/hom_sugbusog_gr"
+              android:textAppearance="@style/hom_sugbusog_gr"
+              app:layout_constraintStart_toStartOf="@id/resto4"
+              app:layout_constraintTop_toTopOf="@id/resto4" />
 
-            <View
-                android:id="@+id/extra"
-                android:layout_width="355dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/resto5" />
+          <ImageView
+              android:id="@+id/resto5"
+              android:layout_width="355dp"
+              android:layout_height="120dp"
+              android:layout_marginStart="28dp"
+              android:layout_marginTop="16dp"
+              android:background="@drawable/rounded_corners"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/homescreenresto5"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/resto4" />
 
+          <TextView
+              android:id="@+id/hom_chef_s_tast"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="12dp"
+              android:layout_marginTop="76dp"
+              android:gravity="center_horizontal|top"
+              android:text="@string/hom_chef_s_tast"
+              android:textAppearance="@style/hom_chef_s_tast"
+              app:layout_constraintStart_toStartOf="@id/resto5"
+              app:layout_constraintTop_toTopOf="@id/resto5" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

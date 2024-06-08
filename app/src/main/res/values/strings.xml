@@ -52,4 +52,12 @@
 
     <string name="sugbo_eats"> SUGBO EATS </string>
     <string name="restaurants"> Restaurants </string>
+    <string name="off_on_week"> 10% off on weekdays </string>
+    <string name="off_for_4_5"> 20% off for 4-5 People </string>
+    <string name="hom_heritage_ta"> Heritage Table </string>
+    <string name="hom_fradel_and_"> Fradel and Spies </string>
+    <string name="hom_kasikas"> Kasikas </string>
+    <string name="hom_sugbusog_gr"> Sugbusog Grill House </string>
+    <string name="hom_chef_s_tast"> Chefs Tasty </string>
+    <string name="my_favorite"> My Favorites </string>
 </resources>
