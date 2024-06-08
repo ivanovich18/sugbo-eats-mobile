@@ -3,37 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="412dp"
+    android:layout_height="915dp"
     android:background="@color/white"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:contentDescription="@string/app_name"
-        android:layout_width="416dp"
-        android:layout_height="431dp"
+        android:layout_width="407dp"
+        android:layout_height="414dp"
         android:layout_marginTop="4dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
         android:src="@drawable/onboarding_last"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
-        android:layout_width="399dp"
-        android:layout_height="357dp"
+        android:layout_width="410dp"
+        android:layout_height="382dp"
+        android:layout_marginBottom="36dp"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.236">
+        app:layout_constraintHorizontal_bias="0.111"
+
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <TextView
             android:id="@+id/SugboEats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="196dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/app_name"
             android:textSize="28sp" />
@@ -43,7 +50,11 @@
             android:layout_width="356dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/SugboEats"
-            android:layout_marginTop="13dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="21dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/Finding"
             android:textColor="@color/black"
@@ -54,36 +65,42 @@
             android:layout_width="302dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/finding"
-            android:layout_marginTop="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif"
             android:text="@string/Taste"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="19sp" />
 
         <Button
             android:id="@+id/LoginBtn"
-            android:layout_width="172dp"
-            android:layout_height="60dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
 
 
-            android:layout_marginStart="0dp"
-
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toStartOf="@+id/SignupBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/buttontext"
             android:text="@string/LogIn" />
 
         <Button
             android:id="@+id/SignupBtn"
-            android:layout_width="176dp"
-            android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/LoginBtn"
+            android:layout_alignParentStart="true"
 
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="10dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="#8FA2AF"
             android:text="@string/SignUp" />
 
 
