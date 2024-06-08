@@ -2,27 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/restaurant_one"
+    android:id="@+id/restaurant_three"
     android:layout_width="412dp"
     android:layout_height="915dp">
 
     <TextView
-        android:id="@+id/restaurant_one_location"
+        android:id="@+id/restaurant_three_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="7dp"
-        android:text="@string/restaurant_one_location"
+        android:text="@string/restaurant_three_location"
         app:layout_constraintStart_toEndOf="@+id/location_icon"
-        app:layout_constraintTop_toBottomOf="@+id/restaurant_one_title" />
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_three_title" />
 
     <ImageView
-        android:id="@+id/restaurant_one_image"
+        android:id="@+id/restaurant_three_image"
         android:layout_width="412dp"
         android:layout_height="188dp"
         android:layout_marginTop="28dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/resto1_pic"
+        android:src="@drawable/resto3_pic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -31,13 +31,13 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/restaurant_one_title"
+        android:id="@+id/restaurant_three_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="617dp"
-        android:text="@string/restaurant_one_name"
+        android:text="@string/restaurant_three_name"
         android:textColor="#000000"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restaurant_one_image"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_three_image"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restaurant_one_title" />
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_three_title" />
 
     <ImageView
         android:id="@+id/operating_hours_icon"
@@ -74,23 +74,23 @@
         app:layout_constraintTop_toBottomOf="@+id/location_icon" />
 
     <TextView
-        android:id="@+id/restaurant_one_operating_hours"
+        android:id="@+id/restaurant_three_operating_hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
-        android:text="@string/restaurant_one_operating_hours"
+        android:text="@string/restaurant_three_operating_hours"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/operating_hours_icon"
-        app:layout_constraintTop_toBottomOf="@+id/restaurant_one_location" />
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_three_location" />
 
     <TextView
-        android:id="@+id/restaurant_one_description"
+        android:id="@+id/restaurant_three_description"
         android:layout_width="352dp"
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
-        android:text="@string/restaurant_one_description"
+        android:text="@string/restaurant_three_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/operating_hours_icon" />
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restaurant_one_description" />
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_three_description" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menu_items"

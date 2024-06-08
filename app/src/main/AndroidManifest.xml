@@ -20,9 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity" />
         <activity android:name=".Resto1Activity" />
+        <activity android:name=".Resto2Activity" />
+        <activity android:name=".Resto3Activity" />
+        <activity android:name=".Resto4Activity" />
+        <activity android:name=".Resto5Activity" />
     </application>
 
 </manifest>
