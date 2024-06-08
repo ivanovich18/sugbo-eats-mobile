@@ -27,10 +27,10 @@
             android:name=".account_page"
             android:exported="false" />
         <activity
-            android:name=".signup_page3"
+            android:name=".account_page"
             android:exported="false" />
         <activity
-            android:name=".signup_page2"
+            android:name=".settings"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -41,6 +41,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup_page2"
+            android:exported="false" />
+        <activity
+            android:name=".signup_page3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
