@@ -13,6 +13,12 @@
         android:theme="@style/splashScreenTheme"
         tools:targetApi="31">
         <activity android:name=".mainscreen">
+        <activity
+            android:name=".onboardinglast"
+            android:exported="false"> </activity>
+
+        <activity android:name=".mainscreen">
+            
         </activity>
         <activity
             android:name=".favorites"
