@@ -13,10 +13,17 @@
         android:theme="@style/Theme.SugboEats"
         tools:targetApi="31">
 
-        <activity android:name=".homescreen" />
         <activity
             android:name=".favorites"
+            android:exported="true" />
+        <activity
+            android:name=".booking_screen"
+            android:exported="true" />
+        <activity
+            android:name=".homescreen"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
