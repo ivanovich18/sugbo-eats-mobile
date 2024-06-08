@@ -49,4 +49,7 @@
         <item>9</item>
         <item>10</item>
     </string-array>
+
+    <string name="sugbo_eats"> SUGBO EATS </string>
+    <string name="restaurants"> Restaurants </string>
 </resources>
