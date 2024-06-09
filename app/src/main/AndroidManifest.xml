@@ -20,7 +20,7 @@
             android:name=".booking_screen"
             android:exported="true" />
         <activity
-            android:name=".Homescreen"
+            android:name=".homescreen"
             android:exported="true">
 
 
