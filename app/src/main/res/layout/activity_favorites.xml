@@ -41,8 +41,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/search"
+    <ImageButton
+        android:id="@+id/search_button"
         android:layout_width="40dp"
         android:layout_height="39dp"
         android:layout_marginStart="32dp"
@@ -134,7 +134,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/fav1"
         android:layout_width="355dp"
         android:layout_height="120dp"
@@ -160,7 +160,7 @@
         app:layout_constraintStart_toStartOf="@id/fav1"
         app:layout_constraintTop_toTopOf="@id/fav1" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/fav2"
         android:layout_width="355dp"
         android:layout_height="120dp"
@@ -185,7 +185,7 @@
         app:layout_constraintStart_toStartOf="@id/fav2"
         app:layout_constraintTop_toTopOf="@id/fav2" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/favorite1"
         android:layout_width="37dp"
         android:layout_height="35dp"
@@ -196,7 +196,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/my_favorite" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/favorite2"
         android:layout_width="37dp"
         android:layout_height="35dp"
@@ -207,16 +207,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/favorite1" />
 
-    <TextView
-        android:id="@+id/search_bar"
-        android:layout_width="271dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="60dp"
-        android:text="Kinilaw"
-        android:textAppearance="@style/search_bar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/notif_btn"
@@ -230,6 +220,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17"
         app:srcCompat="@drawable/notifications_unread" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="271dp"
+        android:layout_height="33dp"
+        android:hint="Search"
+        android:inputType="text"
+        android:textAppearance="@style/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

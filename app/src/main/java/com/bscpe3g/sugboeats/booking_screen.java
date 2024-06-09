@@ -1,24 +1,44 @@
 package com.bscpe3g.sugboeats;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import android.widget.ImageButton;
 
 public class booking_screen extends AppCompatActivity {
+
+    private ImageButton backBtn;
+    private ImageButton returnBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_booking_screen);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.booking_screen), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        // Find the ImageButtons by ID
+        backBtn = findViewById(R.id.back_btn);
+        returnBtn = findViewById(R.id.return_btn);
+
+        // Set a click listener on the back button
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to another activity (e.g., go back to the previous activity)
+                // Replace ExampleActivity.class with the class of the activity you want to navigate to
+                Intent intent = new Intent(booking_screen.this, ExampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Set a click listener on the return button
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to another activity (e.g., go to ReturnActivity)
+                Intent intent = new Intent(booking_screen.this, ReturnActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
