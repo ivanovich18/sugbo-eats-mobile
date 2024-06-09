@@ -54,14 +54,13 @@
     <View
         android:id="@+id/bottombar"
         android:layout_width="410dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/rectangle_2homescreen"
+        android:layout_height="72dp"
+        android:background="@drawable/bottom_rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imagehome"
         android:layout_width="32dp"
         android:layout_height="35dp"
@@ -70,54 +69,55 @@
         android:src="@drawable/homeicon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintVertical_bias="0.617" />
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/imagesched"
-        android:layout_width="47dp"
-        android:layout_height="47dp"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:background="@null"
         android:src="@drawable/timeicon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.656" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imagefave"
-        android:layout_width="37dp"
+        android:layout_width="32dp"
         android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:background="@null"
         android:src="@drawable/favicon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.656" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageprof"
-        android:layout_width="35dp"
+        android:layout_width="32dp"
         android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:background="@null"
         android:src="@drawable/proficon"
         app:layout_constraintBottom_toBottomOf="@id/bottombar"
         app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="@id/bottombar"
         app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.656" />
 
-    <HorizontalScrollView
+   <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -348,5 +348,18 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <TextView
+        android:id="@+id/search_bar"
+        android:layout_width="271dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="64dp"
+        android:text="Kinilaw"
+        android:textAppearance="@style/search_bar"
+        app:layout_constraintMarginStart="72dp"
+        app:layout_constraintMarginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
