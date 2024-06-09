@@ -3,13 +3,12 @@ package com.bscpe3g.sugboeats;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Homescreen extends AppCompatActivity {
 
     private EditText searchBar;
     private ImageButton searchButton;
@@ -61,6 +60,26 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     resultText.setText("Searching for: " + query);
                 }
+            }
+        });
+
+
+        homescreenSale1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the SecondActivity
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Set a click listener on homescreen_sale2 ImageButton to start a new activity
+        homescreenSale2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the ThirdActivity (for example)
+                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+                startActivity(intent);
             }
         });
 

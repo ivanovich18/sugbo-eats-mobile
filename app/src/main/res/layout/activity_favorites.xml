@@ -215,8 +215,6 @@
         android:layout_marginTop="60dp"
         android:text="Kinilaw"
         android:textAppearance="@style/search_bar"
-        app:layout_constraintMarginStart="72dp"
-        app:layout_constraintMarginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
