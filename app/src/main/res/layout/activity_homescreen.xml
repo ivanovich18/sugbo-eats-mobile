@@ -41,15 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/search"
-        android:layout_width="40dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/search"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sugbo_eats" />
+    <ImageButton
+    android:id="@+id/search_button"
+    android:layout_width="40dp"
+    android:layout_height="39dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/search"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/sugbo_eats" />
+
 
     <View
         android:id="@+id/bottombar"
@@ -137,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/homescreen_sale1"
                     android:layout_width="256dp"
                     android:layout_height="130dp"
@@ -168,12 +169,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/homescreen_sale2"
                     android:layout_width="256dp"
                     android:layout_height="130dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/homescreensale2" />
+                    android:src="@drawable/homescreensale2"
+                    tools:layout_editor_absoluteX="-29dp"
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <TextView
                     android:id="@+id/off_for_4_5"
@@ -220,7 +223,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-          <ImageView
+          <ImageButton
               android:id="@+id/resto1"
               android:layout_width="355dp"
               android:layout_height="120dp"
@@ -245,7 +248,7 @@
                 app:layout_constraintStart_toStartOf="@id/resto1"
                 app:layout_constraintTop_toTopOf="@id/resto1" />
 
-        <ImageView
+        <ImageButton
                 android:id="@+id/resto2"
                 android:layout_width="355dp"
                 android:layout_height="120dp"
@@ -270,7 +273,7 @@
                 app:layout_constraintStart_toStartOf="@id/resto2"
                 app:layout_constraintTop_toTopOf="@id/resto2" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/resto3"
                 android:layout_width="355dp"
                 android:layout_height="120dp"
@@ -295,7 +298,7 @@
                 app:layout_constraintStart_toStartOf="@id/resto3"
                 app:layout_constraintTop_toTopOf="@id/resto3" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/resto4"
                 android:layout_width="355dp"
                 android:layout_height="120dp"
@@ -320,7 +323,7 @@
               app:layout_constraintStart_toStartOf="@id/resto4"
               app:layout_constraintTop_toTopOf="@id/resto4" />
 
-          <ImageView
+          <ImageButton
               android:id="@+id/resto5"
               android:layout_width="355dp"
               android:layout_height="120dp"
@@ -349,17 +352,30 @@
 
     </ScrollView>
 
-    <TextView
+    <EditText
         android:id="@+id/search_bar"
         android:layout_width="271dp"
         android:layout_height="33dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="64dp"
-        android:text="Kinilaw"
+        android:hint="Search"
+        android:inputType="text"
         android:textAppearance="@style/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintMarginStart="72dp"
         app:layout_constraintMarginTop="60dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="64dp" />
+
+
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

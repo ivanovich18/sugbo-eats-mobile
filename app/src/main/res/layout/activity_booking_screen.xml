@@ -21,9 +21,10 @@
 
     <View
         android:id="@+id/booking_rec"
-        android:layout_width="410dp"
-        android:layout_height="765dp"
-        android:layout_marginTop="108dp"
+        android:layout_width="404dp"
+        android:layout_height="771dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/rounded_top_cor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -157,6 +158,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_margin="16dp"
+        app:layout_constraintTop_margin="36dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
