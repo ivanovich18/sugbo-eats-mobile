@@ -21,7 +21,7 @@
             android:exported="true" />
         <activity
             android:name=".homescreen"
-            android:name=".settings"
+            android:name=".signup_page1"
             android:exported="false" />
         <activity
             android:name=".account_page"
@@ -36,7 +36,6 @@
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".signup_page1"
             android:name=".signup_page1"
             android:exported="false" />
         <activity
