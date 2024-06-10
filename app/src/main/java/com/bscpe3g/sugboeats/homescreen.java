@@ -20,10 +20,6 @@ public class homescreen extends AppCompatActivity {
     private ImageButton resto3;
     private ImageButton resto4;
     private ImageButton resto5;
-    private ImageButton imagehome;
-    private ImageButton imagesched;
-    private ImageButton imagefave;
-    private ImageButton imageprof;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +37,6 @@ public class homescreen extends AppCompatActivity {
         resto3 = findViewById(R.id.resto3);
         resto4 = findViewById(R.id.resto4);
         resto5 = findViewById(R.id.resto5);
-        imagehome = findViewById(R.id.imagehome);
-        imagesched = findViewById(R.id.imagesched);
-        imagefave = findViewById(R.id.imagefave);
-        imageprof = findViewById(R.id.imageprof);
 
         // Set a click listener on the search button
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -128,41 +120,6 @@ public class homescreen extends AppCompatActivity {
             }
         });
 
-        imagehome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the home activity (if applicable)
-                Intent intent = new Intent(homescreen.this, homescreen.class);
-                startActivity(intent);
-            }
-        });
-
-        imagesched.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the schedule activity (if applicable)
-                Intent intent = new Intent(homescreen.this, ScheduleActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        imagefave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the favorites activity (if applicable)
-                Intent intent = new Intent(homescreen.this, favorites.class);
-                startActivity(intent);
-            }
-        });
-
-        imageprof.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the profile activity (if applicable)
-                Intent intent = new Intent(homescreen.this, ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 }

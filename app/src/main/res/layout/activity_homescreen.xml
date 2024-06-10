@@ -54,69 +54,12 @@
 
     <View
         android:id="@+id/bottombar"
-        android:layout_width="410dp"
-        android:layout_height="72dp"
-        android:background="@drawable/bottom_rectangle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imagehome"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="3dp"
-        android:background="@null"
-        android:src="@drawable/homeicon"
-        app:layout_constraintBottom_toBottomOf="@id/bottombar"
-        app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.163"
-        app:layout_constraintStart_toStartOf="@id/bottombar"
-        app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.617" />
-
-
-    <ImageButton
-        android:id="@+id/imagesched"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="5dp"
-        android:background="@null"
-        android:src="@drawable/timeicon"
-        app:layout_constraintBottom_toBottomOf="@id/bottombar"
-        app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="@id/bottombar"
-        app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.656" />
-
-    <ImageButton
-        android:id="@+id/imagefave"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="5dp"
-        android:background="@null"
-        android:src="@drawable/favicon"
-        app:layout_constraintBottom_toBottomOf="@id/bottombar"
-        app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="@id/bottombar"
-        app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.656" />
-
-    <ImageButton
-        android:id="@+id/imageprof"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="5dp"
-        android:background="@null"
-        android:src="@drawable/proficon"
-        app:layout_constraintBottom_toBottomOf="@id/bottombar"
-        app:layout_constraintEnd_toEndOf="@id/bottombar"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintStart_toStartOf="@id/bottombar"
-        app:layout_constraintTop_toTopOf="@+id/bottombar"
-        app:layout_constraintVertical_bias="0.656" />
 
    <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
