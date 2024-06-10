@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent mainIntent = new Intent(SplashActivity.this, Resto1Activity.class); // Replace HomeActivity with your actual main activity
+            Intent mainIntent = new Intent(SplashActivity.this, ReservationFormActivity.class); // Replace HomeActivity with your actual main activity
             startActivity(mainIntent);
             finish();
         }, SPLASH_DISPLAY_LENGTH);
