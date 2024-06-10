@@ -5,7 +5,11 @@
 
     <color name="text_color">#000000</color> <!-- Black text for light mode -->
     <color name="icon_tint">#000000</color>  <!-- Black icons for light mode -->
-
+    <color name="blue">#3282B8</color>
+    <color name="grey">#5F6368</color>
+    <color name="light_blue">#BBE1FA</color>
+    <color name="dark_blue">#1B262C</color>
+    <color name="red">#F90000</color>
     //onboarding colors
     <color name="background">#F0F4F3</color>
     <color name="buttontext">#3282B8</color>

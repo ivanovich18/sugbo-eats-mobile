@@ -68,6 +68,99 @@
     <string name="phone_num"> 0912-345-6789 </string>
     <string name="return_to_h"> Return to Home </string>
 
+    <string name="all_cap">SUGBO EATS</string>
+    <string name="pass_re">Password Reset</string>
+    <string name="pass_re_des1">To reset your password, please enter your existing</string>
+    <string name="pass_re_des2">email address.</string>
+    <string name="txt_email">Email</string>
+    <string name="btn_continue">Continue</string>
+    <string name="pass_re_li">Password Reset Link Sent</string>
+    <string name="pass_re_li_d1">A secure password reset link has been sent to your</string>
+    <string name="pass_re_li_d2">registered email address. Please check your inbox</string>
+    <string name="pass_re_li_d3">and follow the instructions provided to complete the</string>
+    <string name="pass_re_li_d4">password reset process.</string>
+    <string name="btn_return">Return to Login</string>
+    <string name="reservation">My Reservation</string>
+    <string name="resto_name">Fradel and Spies</string>
+
+    <style name="pass_re_ti">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="pass_re_des">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="email">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FEFEFE</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="sugbo_eats">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="my_reservat">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="resto_name">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="date_and_time">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="resto_loc">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="set_type">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="num_guest">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="decision">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+  
     <string name="sugbo_eats">
         Sugbo Eats
     </string>
@@ -83,5 +176,4 @@
     <string name="Taste">Taste the flavors of Cebu.</string>
     <string name="LogIn">Log In</string>
     <string name="SignUp">Sign Up</string>
-
 </resources>
