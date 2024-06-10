@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restaurant_five"
+    android:layout_width="412dp"
+    android:layout_height="915dp">
+
+    <TextView
+        android:id="@+id/restaurant_five_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/restaurant_five_location"
+        app:layout_constraintStart_toEndOf="@+id/location_icon"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_five_title" />
+
+    <ImageView
+        android:id="@+id/restaurant_five_image"
+        android:layout_width="412dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/resto5_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/restaurant_five_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="617dp"
+        android:text="@string/restaurant_five_name"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_five_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_five_title" />
+
+    <ImageView
+        android:id="@+id/operating_hours_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_icon" />
+
+    <TextView
+        android:id="@+id/restaurant_five_operating_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/restaurant_five_operating_hours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/operating_hours_icon"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_five_location" />
+
+    <TextView
+        android:id="@+id/restaurant_five_description"
+        android:layout_width="352dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/restaurant_five_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operating_hours_icon" />
+
+    <TextView
+        android:id="@+id/restaurant_menu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/restaurant_menu_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_five_description" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menu_items"
+        android:layout_width="352dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_menu_text" />
+
+    <Button
+        android:id="@+id/button_make_reservation"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="#3282B8"
+        android:text="@string/button_make_reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_items"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
