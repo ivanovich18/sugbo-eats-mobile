@@ -3,64 +3,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bscpe3g.sugboeats">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Sugbo Eats"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/splashScreenTheme"
-        tools:targetApi="31">
-<<<<<<< HEAD
-        <activity
-            android:name=".notif"
-            android:exported="false" />
-        <activity
-            android:name=".signup_page1"
-            android:exported="false" />
-        <activity
-            android:name=".account_page"
-            android:exported="false" />
-        <activity
-            android:name=".signup_page3"
-            android:exported="false" />
-        <activity
-            android:name=".signup_page2"
-            android:exported="false" />
-        <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".settings"
-            android:exported="true">
-=======
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Sugbo Eats"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/splashScreenTheme"
+            tools:targetApi="31">
 
-        <activity android:name=".mainscreen" />
-        <activity android:name=".onboardinglast" android:exported="false" />
-        <activity android:name=".FavoritesActivity" android:exported="true" />
-        <activity android:name=".BookingScreenActivity" android:exported="true" />
-        <activity android:name=".HomeScreenActivity" android:exported="false" />
-        <activity android:name=".signup_page1" android:exported="false" />
-        <activity android:name=".AccountPageActivity" android:exported="false" />
-        <activity android:name=".settings" android:exported="false" />
-        <activity android:name=".SplashActivity" android:exported="false" />
-        <activity android:name=".signup_page2" android:exported="false" />
-        <activity android:name=".signup_page3" android:exported="true">
->>>>>>> ae52ffd404177f4216aaa01bab5fd2fb0da1a3fa
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <activity
+                    android:name=".signup_page1"
+                    android:exported="false"
+                    tools:ignore="DuplicateActivity" />
+                <activity
+                    android:name=".account_page"
+                    android:exported="false" />
+                <activity
+                    android:name=".signup_page2"
+                    android:exported="false"
+                    tools:ignore="DuplicateActivity" />
+                <activity
+                    android:name=".signup_page3"
+                    android:exported="true"
+                    tools:ignore="DuplicateActivity,ExtraText" />
+                <activity
+                    android:name=".SplashActivity"
+                    android:exported="false"
+                    tools:ignore="DuplicateActivity" />
+                <activity
+                    android:name=".settings"
+                    android:exported="false"
+                    tools:ignore="DuplicateActivity" />
+                <activity
+                    android:name=".mainscreen" />
+                <activity
+                    android:name=".onboardinglast"
+                    android:exported="false" />
+                <activity
+                    android:name=".FavoritesActivity"
+                    android:exported="true" />
+                <activity
+                    android:name=".BookingScreenActivity"
+                    android:exported="true" />
+                <activity
+                    android:name=".HomeScreenActivity"
+                    android:exported="false" />
+                <activity
+                    android:name=".Resto1Activity" />
+                <activity
+                    android:name=".Resto2Activity" />
+                <activity
+                    android:name=".Resto3Activity" />
+                <activity
+                    android:name=".Resto4Activity" />
+                <activity
+                    android:name=".Resto5Activity" />
+                <activity
+                    android:name=".ReservationFormActivity" />
+                <activity
+                    android:name=".ContactInformationActivity" />
+                <activity
+                    android:name=".ConfirmationActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Resto1Activity" />
-        <activity android:name=".Resto2Activity" />
-        <activity android:name=".Resto3Activity" />
-        <activity android:name=".Resto4Activity" />
-        <activity android:name=".Resto5Activity" />
-        <activity android:name=".ReservationFormActivity" />
-        <activity android:name=".ContactInformationActivity" />
-        <activity android:name=".ConfirmationActivity" />
-    </application>
+                <activity
+                    android:name=".settings"
+                    android:exported="true"
+                    tools:ignore="DuplicateActivity">
+                        <intent-filter>
+                                <action android:name="android.intent.action.MAIN" />
+                                <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+                </activity>
+
+        </application>
 
 </manifest>
