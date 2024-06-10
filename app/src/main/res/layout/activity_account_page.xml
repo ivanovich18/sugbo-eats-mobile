@@ -5,7 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".account_page">
+=======
+    tools:context=".AccountPageActivity">
+>>>>>>> ae52ffd404177f4216aaa01bab5fd2fb0da1a3fa
 
     <ImageView
         android:id="@+id/imageView5"

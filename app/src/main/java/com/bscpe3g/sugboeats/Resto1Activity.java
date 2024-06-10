@@ -1,7 +1,9 @@
 package com.bscpe3g.sugboeats;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Resto1Activity extends AppCompatActivity {
+
+    private Button makeReservationButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,5 +43,18 @@ public class Resto1Activity extends AppCompatActivity {
             dividerItemDecoration.setDrawable(dividerDrawable);
         }
         recyclerView.addItemDecoration(dividerItemDecoration);
+
+        makeReservationButton = findViewById(R.id.button_make_reservation_heritage);
+        makeReservationButton.setOnClickListener(v -> {
+            Intent intent = new Intent(Resto1Activity.this, ReservationFormActivity.class);
+
+            Restaurant restaurant = new Restaurant(
+                    "Heritage Table",
+                    "Colon Street, Cebu City",
+                    R.drawable.resto1_pic // Assume R.drawable.restaurant1_image is the image resource ID
+            );
+            intent.putExtra("restaurant", restaurant);
+            startActivity(intent);
+        });
     }
 }

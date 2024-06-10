@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingScreenActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="511dp"
+        android:layout_height="323dp"
+        android:src="@drawable/bookingbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/booking_rec"
+        android:layout_width="408dp"
+        android:layout_height="776dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/rounded_top_cor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resto"
+        android:layout_width="271dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/resto"
+        android:textAppearance="@style/resto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/undraw_orde"
+        android:layout_width="211dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="220dp"
+        android:clipToOutline="true"
+        android:src="@drawable/undraw_ord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/table_reser"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="416dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/table_reser"
+        android:textAppearance="@style/table_reser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/a_confirmat"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/a_confirmat"
+        android:textAppearance="@style/a_confirmat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/table_reser" />
+
+    <TextView
+        android:id="@+id/if_you_have"
+        android:layout_width="300dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="600dp"
+        android:gravity="top"
+        android:text="@string/if_you_have"
+        android:textAppearance="@style/if_you_have"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="29dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="644dp"
+        android:clipToOutline="true"
+        android:src="@drawable/mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contact_lit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="648dp"
+        android:text="@string/contact_lit"
+        android:textAppearance="@style/contact_lit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="29dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="692dp"
+        android:clipToOutline="true"
+        android:src="@drawable/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="692dp"
+        android:text="@string/phone_num"
+        android:textAppearance="@style/phone_num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/return_btn"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="755dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/return_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/return_to_h"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="768dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/return_to_h"
+        android:textAppearance="@style/return_to_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

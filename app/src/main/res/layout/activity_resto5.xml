@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@+id/restaurant_menu_text" />
 
     <Button
-        android:id="@+id/button_make_reservation"
+        android:id="@+id/button_make_reservation_chef"
         android:layout_width="352dp"
         android:layout_height="45dp"
         android:layout_marginBottom="33dp"
@@ -134,7 +134,7 @@
         app:layout_constraintVertical_bias="0.468" />
 
     <ImageView
-        android:id="@+id/back_button"
+        android:id="@+id/back_button_contact"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
