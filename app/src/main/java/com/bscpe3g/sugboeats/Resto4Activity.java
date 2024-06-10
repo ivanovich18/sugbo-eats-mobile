@@ -1,7 +1,9 @@
 package com.bscpe3g.sugboeats;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Resto4Activity extends AppCompatActivity {
+    private Button makeReservationButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,5 +44,18 @@ public class Resto4Activity extends AppCompatActivity {
             dividerItemDecoration.setDrawable(dividerDrawable);
         }
         recyclerView.addItemDecoration(dividerItemDecoration);
+
+        makeReservationButton = findViewById(R.id.button_make_reservation_sugbusog);
+        makeReservationButton.setOnClickListener(v -> {
+            Intent intent = new Intent(Resto4Activity.this, ReservationFormActivity.class);
+
+            Restaurant restaurant = new Restaurant(
+                    "Sugbusog Grill House",
+                    "Parkmall, Mandaue City",
+                    R.drawable.resto4_pic // Assume R.drawable.restaurant1_image is the image resource ID
+            );
+            intent.putExtra("restaurant", restaurant);
+            startActivity(intent);
+        });
     }
 }

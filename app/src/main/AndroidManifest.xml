@@ -27,6 +27,7 @@
         <activity android:name=".Resto5Activity" />
         <activity android:name=".ReservationFormActivity" />
         <activity android:name=".ContactInformationActivity" />
+        <activity android:name=".ConfirmationActivity" />
     </application>
 
 </manifest>

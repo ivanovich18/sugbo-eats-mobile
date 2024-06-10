@@ -6,7 +6,7 @@
     android:layout_height="915dp">
 
     <Button
-        android:id="@+id/button_make_reservation"
+        android:id="@+id/button_make_reservation_contact"
         android:layout_width="352dp"
         android:layout_height="45dp"
         android:backgroundTint="#3282B8"
@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/special_requests"
+        app:layout_constraintTop_toBottomOf="@+id/customer_address"
         app:layout_constraintVertical_bias="0.18" />
 
     <ImageView
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/back_button"
+        android:id="@+id/back_button_contact"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/contact_information_text_view" />
 
     <TextView
-        android:id="@+id/reservation_time_text_view"
+        android:id="@+id/reservation_time_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reservation_time_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/reservation_time_contact" />
 
     <EditText
         android:id="@+id/first_name"
@@ -118,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/first_name" />
 
     <EditText
-        android:id="@+id/reservation_time"
+        android:id="@+id/last_name"
         android:layout_width="354dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -143,7 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reservation_time" />
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
 
     <TextView
         android:id="@+id/email_text_view"
@@ -157,7 +157,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <TextView
         android:id="@+id/address_text_view"
@@ -172,10 +172,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/email_address" />
 
     <EditText
-        android:id="@+id/special_requests"
+        android:id="@+id/customer_address"
         android:layout_width="354dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -190,7 +190,7 @@
         app:layout_constraintTop_toBottomOf="@+id/address_text_view" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phone"
         android:layout_width="354dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -203,7 +203,7 @@
         app:layout_constraintTop_toBottomOf="@+id/phone_text_view" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email_address"
         android:layout_width="354dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
