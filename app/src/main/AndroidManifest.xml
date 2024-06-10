@@ -28,8 +28,8 @@
         <activity android:name=".ReservationFormActivity" />
         <activity android:name=".ContactInformationActivity" />
         <activity android:name=".ConfirmationActivity" />
-        <activity android:name=".HomeScreenActivity" />
         <activity android:name=".SuccessfulBookingActivity" />
+        <activity android:name=".HomeScreenActivity" />
     </application>
 
 </manifest>

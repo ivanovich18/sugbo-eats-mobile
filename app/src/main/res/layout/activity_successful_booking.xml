@@ -2,35 +2,38 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/return_home_button"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF">
 
-
     <Button
+        android:id="@+id/return_home_button"
         android:layout_width="352dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#3282B8"
         android:text="Return to Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/special_requests"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.18"
+        tools:ignore="HardcodedText,UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="352dp"
-        android:layout_marginTop="50dp"
-        android:text="Table Reservation Booked Successfully!"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/table_reservation_booked_successfully"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -38,7 +41,8 @@
         android:id="@+id/imageView2"
         android:layout_width="201dp"
         android:layout_height="177dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
@@ -49,11 +53,11 @@
         android:layout_width="352dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Kindly present a valid ID to the front desk staff upon your arrival at the restaurant on your reserved date and time."
+        android:text="@string/kindly_present_a_valid_id_to_the_front_desk_staff_upon_your_arrival_at_the_restaurant_on_your_reserved_date_and_time"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -62,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:text="If you have concerns, please contact:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,8 +77,9 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="143dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/splash_image" />

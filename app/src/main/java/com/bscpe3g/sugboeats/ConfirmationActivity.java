@@ -2,7 +2,9 @@ package com.bscpe3g.sugboeats;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -79,7 +81,7 @@ public class ConfirmationActivity extends AppCompatActivity {
         });
 
         backButton.setOnClickListener(v -> {
-            Intent backIntent = new Intent(ConfirmationActivity.this, SuccessfulBookingActivity.class);
+            Intent backIntent = new Intent(ConfirmationActivity.this, ContactInformationActivity.class);
             backIntent.putExtra("firstName", firstName);
             backIntent.putExtra("lastName", lastName);
             backIntent.putExtra("phoneNumber", phoneNumber);
@@ -93,5 +95,22 @@ public class ConfirmationActivity extends AppCompatActivity {
             backIntent.putExtra("restaurant", restaurant);
             startActivity(backIntent);
         });
+        Button makeReservationButton = findViewById(R.id.button_make_reservation2);
+        makeReservationButton.setOnClickListener(v -> {
+            Intent successfulBookingIntent = new Intent(ConfirmationActivity.this, SuccessfulBookingActivity.class);
+            successfulBookingIntent.putExtra("firstName", firstName);
+            successfulBookingIntent.putExtra("lastName", lastName);
+            successfulBookingIntent.putExtra("phoneNumber", phoneNumber);
+            successfulBookingIntent.putExtra("emailAddress", emailAddress);
+            successfulBookingIntent.putExtra("customerAddress", customerAddress);
+            successfulBookingIntent.putExtra("reservationDate", reservationDate);
+            successfulBookingIntent.putExtra("reservationTime", reservationTime);
+            successfulBookingIntent.putExtra("settingType", settingType);
+            successfulBookingIntent.putExtra("numberOfGuests", numberOfGuests);
+            successfulBookingIntent.putExtra("specialRequests", specialRequests);
+            successfulBookingIntent.putExtra("restaurant", restaurant);
+            startActivity(successfulBookingIntent);
+        });
     }
 }
+

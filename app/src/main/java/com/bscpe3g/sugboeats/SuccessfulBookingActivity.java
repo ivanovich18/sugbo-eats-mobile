@@ -9,14 +9,13 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SuccessfulBookingActivity extends AppCompatActivity {
-    private Button homeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_successful_booking);
 
-        homeBtn = findViewById(R.id.return_home_button);
+        Button homeBtn = findViewById(R.id.return_home_button);
 
         // Set a click listener on the return button
         homeBtn.setOnClickListener(new View.OnClickListener() {
