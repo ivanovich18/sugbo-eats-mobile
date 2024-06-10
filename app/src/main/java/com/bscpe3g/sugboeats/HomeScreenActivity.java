@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class homescreen extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity {
 
     private EditText searchBar;
     private ImageButton searchButton;
@@ -68,7 +68,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start the SecondActivity
-                Intent intent = new Intent(homescreen.this, SecondActivity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto4Activity.class);
                 startActivity(intent);
             }
         });
@@ -78,7 +78,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start the ThirdActivity (for example)
-                Intent intent = new Intent(homescreen.this, ThirdActivity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto5Activity.class);
                 startActivity(intent);
             }
         });
@@ -87,7 +87,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the desired activity, e.g., Resto1Activity
-                Intent intent = new Intent(homescreen.this, Resto1Activity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto1Activity.class);
                 startActivity(intent);
             }
         });
@@ -96,7 +96,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the desired activity, e.g., Resto2Activity
-                Intent intent = new Intent(homescreen.this, Resto2Activity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto2Activity.class);
                 startActivity(intent);
             }
         });
@@ -105,7 +105,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the desired activity, e.g., Resto2Activity
-                Intent intent = new Intent(homescreen.this, Resto3Activity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto3Activity.class);
                 startActivity(intent);
             }
         });
@@ -114,7 +114,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the desired activity, e.g., Resto2Activity
-                Intent intent = new Intent(homescreen.this, Resto4Activity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto4Activity.class);
                 startActivity(intent);
             }
         });
@@ -123,7 +123,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the desired activity, e.g., Resto2Activity
-                Intent intent = new Intent(homescreen.this, Resto5Activity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, Resto5Activity.class);
                 startActivity(intent);
             }
         });
@@ -132,7 +132,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the home activity (if applicable)
-                Intent intent = new Intent(homescreen.this, homescreen.class);
+                Intent intent = new Intent(HomeScreenActivity.this, HomeScreenActivity.class);
                 startActivity(intent);
             }
         });
@@ -141,7 +141,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the schedule activity (if applicable)
-                Intent intent = new Intent(homescreen.this, ScheduleActivity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, BookingScreenActivity.class);
                 startActivity(intent);
             }
         });
@@ -150,7 +150,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the favorites activity (if applicable)
-                Intent intent = new Intent(homescreen.this, favorites.class);
+                Intent intent = new Intent(HomeScreenActivity.this, FavoritesActivity.class);
                 startActivity(intent);
             }
         });
@@ -159,7 +159,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the profile activity (if applicable)
-                Intent intent = new Intent(homescreen.this, ProfileActivity.class);
+                Intent intent = new Intent(HomeScreenActivity.this, settings.class);
                 startActivity(intent);
             }
         });

@@ -39,11 +39,11 @@ public class ResetLink extends AppCompatActivity {
             }
         });
 
-        rtnLog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ResetLink.this, MainActivity.class));
-            }
-        });
+//       rtnLog.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(ResetLink.this, MainActivity.class));
+//            }
+//        });
     }
 }

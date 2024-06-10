@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageButton;
 
-public class booking_screen extends AppCompatActivity {
+public class BookingScreenActivity extends AppCompatActivity {
 
     private ImageButton backBtn;
     private ImageButton returnBtn;
@@ -26,7 +26,7 @@ public class booking_screen extends AppCompatActivity {
             public void onClick(View v) {
                 // Navigate to another activity (e.g., go back to the previous activity)
                 // Replace ExampleActivity.class with the class of the activity you want to navigate to
-                Intent intent = new Intent(booking_screen.this, ExampleActivity.class);
+                Intent intent = new Intent(BookingScreenActivity.this, ConfirmationActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class booking_screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to another activity (e.g., go to ReturnActivity)
-                Intent intent = new Intent(booking_screen.this, ReturnActivity.class);
+                Intent intent = new Intent(BookingScreenActivity.this, HomeScreenActivity.class);
                 startActivity(intent);
             }
         });

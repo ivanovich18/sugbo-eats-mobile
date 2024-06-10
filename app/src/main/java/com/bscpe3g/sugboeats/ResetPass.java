@@ -44,7 +44,7 @@ public class ResetPass extends AppCompatActivity {
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(ResetPass.this, MainActivity.class);
+                Intent intent = new Intent(ResetPass.this, HomeScreenActivity.class);
                 startActivity(intent);
             }
         });

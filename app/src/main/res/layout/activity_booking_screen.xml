@@ -5,7 +5,7 @@
     android:id="@+id/booking_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".booking_screen">
+    tools:context=".BookingScreenActivity">
 
     <ImageView
         android:id="@+id/bg"

@@ -6,22 +6,19 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
-public class signup_page1 extends AppCompatActivity {
-    private EditText editTextText;
-    private EditText editTextText2;
-    private AppCompatButton button;
-import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class signup_page1 extends AppCompatActivity {
+
+
+    private EditText editTextText;
+    private EditText editTextText2;
+    private AppCompatButton button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

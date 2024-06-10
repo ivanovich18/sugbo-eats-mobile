@@ -21,7 +21,7 @@ public class settings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to account_page
-                Intent intent = new Intent(settings.this, account_page.class);
+                Intent intent = new Intent(settings.this, AccountPageActivity.class);
                 startActivity(intent);
             }
         });

@@ -3,14 +3,13 @@ package com.bscpe3g.sugboeats;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class favorites extends AppCompatActivity {
+public class FavoritesActivity extends AppCompatActivity {
 
     private EditText searchBar;
     private ImageButton searchButton;
@@ -41,7 +40,6 @@ public class favorites extends AppCompatActivity {
         imagesched = findViewById(R.id.imagesched);
         imagefave = findViewById(R.id.imagefave);
         imageprof = findViewById(R.id.imageprof);
-        notifButton = findViewById(R.id.notif_btn);
         favorite1Button = findViewById(R.id.favorite1);
         favorite2Button = findViewById(R.id.favorite2);
         fav1 = findViewById(R.id.fav1);
@@ -70,7 +68,7 @@ public class favorites extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the home activity (if applicable)
-                Intent intent = new Intent(favorites.this, homescreen.class);
+                Intent intent = new Intent(FavoritesActivity.this, HomeScreenActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,7 +77,7 @@ public class favorites extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the schedule activity (if applicable)
-                Intent intent = new Intent(favorites.this, ScheduleActivity.class);
+                Intent intent = new Intent(FavoritesActivity.this, Reservation_screen.class);
                 startActivity(intent);
             }
         });
@@ -88,7 +86,7 @@ public class favorites extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the favorites activity (if applicable)
-                Intent intent = new Intent(favorites.this, favorites.class);
+                Intent intent = new Intent(FavoritesActivity.this, FavoritesActivity.class);
                 startActivity(intent);
             }
         });
@@ -97,7 +95,7 @@ public class favorites extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the profile activity (if applicable)
-                Intent intent = new Intent(favorites.this, ProfileActivity.class);
+                Intent intent = new Intent(FavoritesActivity.this, settings.class);
                 startActivity(intent);
             }
         });
@@ -119,14 +117,6 @@ public class favorites extends AppCompatActivity {
                 homFradelAnd.setVisibility(View.GONE);
                 favorite2Button.setVisibility(View.GONE);
             }
-        });
-        notifButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-        public void onClick(View v) {
-            // Create an Intent to start the NotificationsActivity
-            Intent intent = new Intent(favorites.this, NotificationsActivity.class);
-            startActivity(intent);
-        }
     });
 
     }
