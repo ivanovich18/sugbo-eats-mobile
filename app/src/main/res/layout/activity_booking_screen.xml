@@ -36,8 +36,10 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="140dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/resto"
-        android:textAppearance="@style/resto"
+        android:text="Restaurant Name"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,8 +62,10 @@
         android:layout_marginStart="79dp"
         android:layout_marginTop="416dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/table_reser"
-        android:textAppearance="@style/table_reser"
+        android:text="TABLE RESERVATION BOOKED SUCCESSFULLY!"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,8 +76,10 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/a_confirmat"
-        android:textAppearance="@style/a_confirmat"
+        android:text="A confirmation email will be sent to the email address you provided. Please show the confirmation email to the attending personnel when you arrive at your scheduled date and time."
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textAlignment="gravity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/table_reser" />
 
@@ -84,8 +90,9 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="600dp"
         android:gravity="top"
-        android:text="@string/if_you_have"
-        android:textAppearance="@style/if_you_have"
+        android:text=" If you have concerns, please contact:"
+        android:textSize="15sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,8 +113,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
         android:layout_marginTop="648dp"
-        android:text="@string/contact_lit"
-        android:textAppearance="@style/contact_lit"
+        android:text="contact@restaurant.com"
+        android:textSize="15sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,8 +136,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
         android:layout_marginTop="692dp"
-        android:text="@string/phone_num"
-        android:textAppearance="@style/phone_num"
+        android:text="0912-345-6789"
+        android:textSize="15sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -151,8 +160,10 @@
         android:layout_height="19dp"
         android:layout_marginTop="768dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/return_to_h"
-        android:textAppearance="@style/return_to_h"
+        android:text="Return to Home"
+        android:textSize="16sp"
+        android:textColor="#FEFEFE"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

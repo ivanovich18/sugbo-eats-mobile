@@ -10,9 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class homescreen extends AppCompatActivity {
 
-    private EditText searchBar;
-    private ImageButton searchButton;
-    private TextView resultText;
     private ImageButton homescreenSale1;
     private ImageButton homescreenSale2;
     private ImageButton resto1;
@@ -27,9 +24,6 @@ public class homescreen extends AppCompatActivity {
         setContentView(R.layout.activity_homescreen);
 
         // Find views by their ID
-        searchBar = findViewById(R.id.search_bar);
-        searchButton = findViewById(R.id.search_button);
-        resultText = findViewById(R.id.result_text);
         homescreenSale1 = findViewById(R.id.homescreen_sale1);
         homescreenSale2 = findViewById(R.id.homescreen_sale2);
         resto1 = findViewById(R.id.resto1);
@@ -39,22 +33,6 @@ public class homescreen extends AppCompatActivity {
         resto5 = findViewById(R.id.resto5);
 
         // Set a click listener on the search button
-        searchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Get the text from the search bar
-                String query = searchBar.getText().toString().trim();
-
-                // Perform a search (for simplicity, just set the result text)
-                // In a real app, you might query a database or perform a web search
-                if (query.isEmpty()) {
-                    resultText.setText("Please enter a search term.");
-                } else {
-                    resultText.setText("Searching for: " + query);
-                }
-            }
-        });
-
 
         homescreenSale1.setOnClickListener(new View.OnClickListener() {
             @Override
