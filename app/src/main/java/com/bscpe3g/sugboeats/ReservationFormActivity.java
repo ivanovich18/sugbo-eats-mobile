@@ -97,6 +97,16 @@ public class ReservationFormActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Restaurant restaurant = (Restaurant) intent.getSerializableExtra("restaurant");
 
+        ImageView backButton = findViewById(R.id.back_button_table); // Ensure correct ID
+        backButton.setOnClickListener(v -> {
+            // Pass the restaurant object back to the previous activity
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("restaurant", restaurant);
+            setResult(RESULT_OK, resultIntent);
+            finish(); // Go back to the previous activity
+        });
+
+
         if (restaurant != null) {
             restaurantImageView.setImageResource(restaurant.getImageResourceId());
             restaurantNameTextView.setText(restaurant.getName());
