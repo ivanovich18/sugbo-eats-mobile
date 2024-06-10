@@ -19,6 +19,7 @@ public class favorites extends AppCompatActivity {
     private ImageButton imagesched;
     private ImageButton imagefave;
     private ImageButton imageprof;
+    private ImageButton notif_btn;
     private ImageButton fav1;
     private ImageButton fav2;
     private ImageButton favorite1;
@@ -36,6 +37,7 @@ public class favorites extends AppCompatActivity {
         imagesched = findViewById(R.id.imagesched);
         imagefave = findViewById(R.id.imagefave);
         imageprof = findViewById(R.id.imageprof);
+        ImageButton notifButton = findViewById(R.id.notif_btn);
         ImageButton favorite1Button = findViewById(R.id.favorite1);
         ImageButton favorite2Button = findViewById(R.id.favorite2);
         ImageButton fav1 = findViewById(R.id.fav1);
@@ -114,6 +116,14 @@ public class favorites extends AppCompatActivity {
                 favorite2Button.setVisibility(View.GONE);
             }
         });
+        notifButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+        public void onClick(View v) {
+            // Create an Intent to start the NotificationsActivity
+            Intent intent = new Intent(favorites.this, NotificationsActivity.class);
+            startActivity(intent);
+        }
+    });
 
     }
 }
