@@ -49,4 +49,22 @@
         <item>9</item>
         <item>10</item>
     </string-array>
+
+    <string name="sugbo_eats"> SUGBO EATS </string>
+    <string name="restaurants"> Restaurants </string>
+    <string name="off_on_week"> 10% off on weekdays </string>
+    <string name="off_for_4_5"> 20% off for 4-5 People </string>
+    <string name="hom_heritage_ta"> Heritage Table </string>
+    <string name="hom_fradel_and_"> Fradel and Spies </string>
+    <string name="hom_kasikas"> Kasikas </string>
+    <string name="hom_sugbusog_gr"> Sugbusog Grill House </string>
+    <string name="hom_chef_s_tast"> Chefs Tasty </string>
+    <string name="my_favorite"> My Favorites </string>
+    <string name="resto"> Restaurant Name </string>
+    <string name="table_reser">TABLE RESERVATION BOOKED SUCCESSFULLY! </string>
+    <string name="a_confirmat"> A confirmation email will be sent to the email address you provided. Please show the confirmation email to the attending personnel when you arrive at your scheduled date and time. </string>
+    <string name="if_you_have"> If you have concerns, please contact: </string>
+    <string name="contact_lit"> contact@restaurant.com </string>
+    <string name="phone_num"> 0912-345-6789 </string>
+    <string name="return_to_h"> Return to Home </string>
 </resources>
