@@ -28,7 +28,7 @@ public class Resto5Activity extends AppCompatActivity {
 
         List<MenuItem> menuItems = new ArrayList<>();
         menuItems.add(new MenuItem("Sizzling Sisig", "Sizzling medley of chopped pork face, ears, and liver, seasoned with calamansi, onions, and chili peppers.", 220.00, R.drawable.sizzling_sisig));
-            menuItems.add(new MenuItem("Kare-Kare", "Oxtail and tripe stew in a rich peanut sauce, served with our very own bagoong on the side.", 250.00, R.drawable.kare_kare));
+        menuItems.add(new MenuItem("Kare-Kare", "Oxtail and tripe stew in a rich peanut sauce, served with our very own bagoong on the side.", 250.00, R.drawable.kare_kare));
         menuItems.add(new MenuItem("Bulalo", "Hearty beef shank and bone marrow soup with vegetables and spices served piping hot.", 280.00, R.drawable.bulalo));
         menuItems.add(new MenuItem("Pork Binagoongan", "Pork belly cooked in bagoong (shrimp paste), a salty and umami-rich condiment that complements the richness of the pork.", 300.00, R.drawable.pork_binagoongan));
         menuItems.add(new MenuItem("Chicken Afritada", "Chicken braised in a tomato sauce with potatoes, carrots, and peas, offering a comforting and flavorful option.", 250.00, R.drawable.chicken_afritada));

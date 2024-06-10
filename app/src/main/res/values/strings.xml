@@ -31,6 +31,9 @@
     <string name="restaurant_five_location">Mactan Newtown, Lapu-lapu City</string>
     <string name="restaurant_five_operating_hours">1:00 pm - 10:00 pm</string>
     <string name="restaurant_five_description">Chef\'s Tasty serves a delightful array of Filipino favorite foods, offering authentic flavors and heartwarming dishes that bring the taste of home to every meal."</string>
+    <string name="table_reservation_booked_successfully">Table Reservation Booked Successfully!</string>
+    <string name="kindly_present_a_valid_id_to_the_front_desk_staff_upon_your_arrival_at_the_restaurant_on_your_reserved_date_and_time">Kindly present a valid ID to the front desk staff upon your arrival at the restaurant on your reserved date and time.</string>
+    <string name="todo">TODO</string>
 
     <string-array name="setting_types">
         <item>Indoor</item>
