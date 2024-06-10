@@ -62,7 +62,7 @@ public class favorites extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the home activity (if applicable)
-                Intent intent = new Intent(favorites.this, HomeActivity.class);
+                Intent intent = new Intent(favorites.this, homescreen.class);
                 startActivity(intent);
             }
         });
@@ -94,24 +94,6 @@ public class favorites extends AppCompatActivity {
             }
         });
 
-        fav1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the favorite restaurant 1 activity (if applicable)
-                Intent intent = new Intent(favorites.this, FavoriteRestaurant1Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        // Set a click listener on fav2
-        fav2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the favorite restaurant 2 activity (if applicable)
-                Intent intent = new Intent(favorites.this, FavoriteRestaurant2Activity.class);
-                startActivity(intent);
-            }
-        });
 
         favorite1.setOnClickListener(new View.OnClickListener() {
             @Override
