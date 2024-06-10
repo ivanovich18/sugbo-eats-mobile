@@ -21,11 +21,26 @@
             android:exported="true" />
         <activity
             android:name=".homescreen"
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".account_page"
+            android:exported="false" />
+        <activity
+            android:name=".signup_page3"
+            android:exported="false" />
+        <activity
+            android:name=".signup_page2"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup_page1"
             android:exported="true">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
