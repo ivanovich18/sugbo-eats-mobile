@@ -87,6 +87,8 @@
         android:background="@drawable/rectangle_reset"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:contentDescription="Enter your email address"
+        android:paddingStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
