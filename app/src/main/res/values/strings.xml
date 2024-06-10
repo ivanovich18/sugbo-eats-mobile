@@ -160,4 +160,20 @@
         <item name="android:textColor">#000000</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
+  
+    <string name="sugbo_eats">
+        Sugbo Eats
+    </string>
+    <string name="heading_one">Easy</string>
+    <string name="heading_two">Convenient</string>
+    <string name="heading_three">Enjoy</string>
+
+    //Description
+    <string name="desc_one">Effortlessly book your favorite tables with Sugbo Eats.</string>
+    <string name="desc_two">Dine your way - alfresco, indoors, or with special requests.</string>
+    <string name="desc_three">Enjoy hassle-free booking confirmations and QR code check-ins.</string>
+    <string name="Finding">Finding the perfect ambiance for any occasion.</string>
+    <string name="Taste">Taste the flavors of Cebu.</string>
+    <string name="LogIn">Log In</string>
+    <string name="SignUp">Sign Up</string>
 </resources>
