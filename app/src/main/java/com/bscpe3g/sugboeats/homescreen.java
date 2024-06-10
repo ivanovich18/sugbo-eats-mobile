@@ -132,7 +132,7 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the home activity (if applicable)
-                Intent intent = new Intent(homescreen.this, HomeActivity.class);
+                Intent intent = new Intent(homescreen.this, homescreen.class);
                 startActivity(intent);
             }
         });
