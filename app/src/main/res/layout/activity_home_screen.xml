@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FEFEFE">
+
+    <View
+        android:id="@+id/rec_background"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1B262C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sugbo_eats"
+        android:layout_width="118dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/logo_transparent"
+        android:gravity="center_horizontal|top"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bottombar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rec_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <!-- ConstraintLayout for Sale 1 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/homescreen_sale1"
+                    android:layout_width="256dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="15dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/promo_one"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/off_on_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_horizontal|top"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="10% off on weekdays"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/homescreen_sale1"
+                    app:layout_constraintEnd_toEndOf="@id/homescreen_sale1"
+                    app:layout_constraintStart_toStartOf="@id/homescreen_sale1"
+                    app:layout_constraintTop_toTopOf="@id/homescreen_sale1"
+                    app:layout_constraintVertical_bias="0.851" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/homescreen_sale2"
+                    android:layout_width="256dp"
+                    android:layout_height="130dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/promo_two"
+                    tools:layout_editor_absoluteX="-29dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/off_for_4_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_horizontal|top"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="20% off for 4-5 People"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/homescreen_sale2"
+                    app:layout_constraintEnd_toEndOf="@id/homescreen_sale2"
+                    app:layout_constraintStart_toStartOf="@id/homescreen_sale2"
+                    app:layout_constraintTop_toTopOf="@id/homescreen_sale2"
+                    app:layout_constraintVertical_bias="0.851" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/restaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center_horizontal|top"
+        android:text="Restaurants"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="33dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurants">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE">
+
+            <ImageButton
+                android:id="@+id/resto1"
+                android:layout_width="355dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:layerType="software"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rounded_resto1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/restaurants" />
+
+            <TextView
+                android:id="@+id/hom_heritage_ta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#000000"
+                android:gravity="center_horizontal|top"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Heritage Table"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/resto1"
+                app:layout_constraintTop_toTopOf="@id/resto1" />
+
+            <ImageButton
+                android:id="@+id/resto2"
+                android:layout_width="355dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rounded_resto2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resto1" />
+
+            <TextView
+                android:id="@+id/hom_fradel_and_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#000000"
+                android:gravity="center_horizontal|top"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Fradel and Spice"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/resto2"
+                app:layout_constraintTop_toTopOf="@id/resto2" />
+
+            <ImageButton
+                android:id="@+id/resto3"
+                android:layout_width="355dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rounded_resto3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resto2" />
+
+            <TextView
+                android:id="@+id/hom_kasikas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#000000"
+                android:gravity="center_horizontal|top"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Kasikas"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/resto3"
+                app:layout_constraintTop_toTopOf="@id/resto3" />
+
+            <ImageButton
+                android:id="@+id/resto4"
+                android:layout_width="355dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/round_resto4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resto3" />
+
+            <TextView
+                android:id="@+id/hom_sugbusog_gr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#000000"
+                android:gravity="center_horizontal|top"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Sugbusog Grill House"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/resto4"
+                app:layout_constraintTop_toTopOf="@id/resto4" />
+
+            <ImageButton
+                android:id="@+id/resto5"
+                android:layout_width="355dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rounded_resto5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resto4" />
+
+            <TextView
+                android:id="@+id/hom_chef_s_tast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#000000"
+                android:gravity="center_horizontal|top"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Chefs Tasty"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/resto5"
+                app:layout_constraintTop_toTopOf="@id/resto5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

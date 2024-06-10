@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import java.util.List;
 public class Resto1Activity extends AppCompatActivity {
 
     private Button makeReservationButton;
+    private ImageView backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +57,12 @@ public class Resto1Activity extends AppCompatActivity {
             );
             intent.putExtra("restaurant", restaurant);
             startActivity(intent);
+        });
+
+        ImageView backButton = findViewById(R.id.back_button_resto1); // Ensure correct ID
+        backButton.setOnClickListener(v -> {
+            Intent intent = new Intent(Resto1Activity.this, HomeScreenActivity.class);
+            startActivity(intent);  // Added to start the HomeScreenActivity
         });
     }
 }

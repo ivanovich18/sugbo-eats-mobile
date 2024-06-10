@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@+id/restaurant_menu_text" />
 
     <ImageView
-        android:id="@+id/back_button_contact"
+        android:id="@+id/back_button_resto2"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"

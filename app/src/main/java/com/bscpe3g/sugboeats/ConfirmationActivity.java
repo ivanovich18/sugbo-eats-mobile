@@ -79,7 +79,7 @@ public class ConfirmationActivity extends AppCompatActivity {
         });
 
         backButton.setOnClickListener(v -> {
-            Intent backIntent = new Intent(ConfirmationActivity.this, ContactInformationActivity.class);
+            Intent backIntent = new Intent(ConfirmationActivity.this, SuccessfulBookingActivity.class);
             backIntent.putExtra("firstName", firstName);
             backIntent.putExtra("lastName", lastName);
             backIntent.putExtra("phoneNumber", phoneNumber);
