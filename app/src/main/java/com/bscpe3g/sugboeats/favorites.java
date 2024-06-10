@@ -36,10 +36,12 @@ public class favorites extends AppCompatActivity {
         imagesched = findViewById(R.id.imagesched);
         imagefave = findViewById(R.id.imagefave);
         imageprof = findViewById(R.id.imageprof);
-        fav1 = findViewById(R.id.fav1);
-        fav2 = findViewById(R.id.fav2);
-        favorite1 = findViewById(R.id.favorite1);
-        favorite2 = findViewById(R.id.favorite2);
+        ImageButton favorite1Button = findViewById(R.id.favorite1);
+        ImageButton favorite2Button = findViewById(R.id.favorite2);
+        ImageButton fav1 = findViewById(R.id.fav1);
+        ImageButton fav2 = findViewById(R.id.fav2);
+        TextView homHeritageTa = findViewById(R.id.hom_heritage_ta);
+        TextView homFradelAnd = findViewById(R.id.hom_fradel_and_);
 
         // Set a click listener on the search button
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -95,22 +97,21 @@ public class favorites extends AppCompatActivity {
         });
 
 
-        favorite1.setOnClickListener(new View.OnClickListener() {
+        favorite1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Remove favorite1 from the layout
-                ViewGroup parent = (ViewGroup) favorite1.getParent();
-                parent.removeView(favorite1);
+                fav1.setVisibility(View.GONE);
+                homHeritageTa.setVisibility(View.GONE);
+                favorite1Button.setVisibility(View.GONE);
             }
         });
 
-        // Set a click listener on favorite2
-        favorite2.setOnClickListener(new View.OnClickListener() {
+        favorite2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Remove favorite2 from the layout
-                ViewGroup parent = (ViewGroup) favorite2.getParent();
-                parent.removeView(favorite2);
+                fav2.setVisibility(View.GONE);
+                homFradelAnd.setVisibility(View.GONE);
+                favorite2Button.setVisibility(View.GONE);
             }
         });
 
