@@ -17,110 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/searchrec"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/rectangle_2homescreen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sugbo_eats" />
-
-    <TextView
-        android:id="@+id/sugbo_eats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal|top"
-        android:text="@string/sugbo_eats"
-        android:textAppearance="@style/sugbo_eats"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/search_button"
-        android:layout_width="40dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/search"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sugbo_eats" />
-
-    <View
-        android:id="@+id/bottom_bar"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/bottom_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rec_background"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/imagehome"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="3dp"
-        android:background="@null"
-        android:src="@drawable/homeicon2"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
-        app:layout_constraintEnd_toEndOf="@id/bottom_bar"
-        app:layout_constraintHorizontal_bias="0.163"
-        app:layout_constraintStart_toStartOf="@id/bottom_bar"
-        app:layout_constraintTop_toTopOf="@+id/bottom_bar"
-        app:layout_constraintVertical_bias="0.617" />
-
-    <ImageButton
-        android:id="@+id/imagesched"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="5dp"
-        android:background="@null"
-        android:src="@drawable/timeicon"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
-        app:layout_constraintEnd_toEndOf="@id/bottom_bar"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="@id/bottom_bar"
-        app:layout_constraintTop_toTopOf="@+id/bottom_bar"
-        app:layout_constraintVertical_bias="0.656" />
-
-    <ImageButton
-        android:id="@+id/imagefave"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="5dp"
-        android:background="@null"
-        android:src="@drawable/favicon2"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
-        app:layout_constraintEnd_toEndOf="@id/bottom_bar"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="@id/bottom_bar"
-        app:layout_constraintTop_toTopOf="@+id/bottom_bar"
-        app:layout_constraintVertical_bias="0.656" />
-
-    <ImageButton
-        android:id="@+id/imageprof"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="5dp"
-        android:background="@null"
-        android:src="@drawable/proficon"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
-        app:layout_constraintEnd_toEndOf="@id/bottom_bar"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintStart_toStartOf="@id/bottom_bar"
-        app:layout_constraintTop_toTopOf="@+id/bottom_bar"
-        app:layout_constraintVertical_bias="0.656" />
-
 
     <TextView
         android:id="@+id/my_favorite"
@@ -129,8 +25,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="134dp"
         android:gravity="top"
-        android:text="@string/my_favorite"
-        android:textAppearance="@style/my_favorite"
+        android:text="My Favorites"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -155,8 +53,13 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="80dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/hom_heritage_ta"
-        android:textAppearance="@style/hom_heritage_ta"
+        android:text="Heritage Table"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="4"
         app:layout_constraintStart_toStartOf="@id/fav1"
         app:layout_constraintTop_toTopOf="@id/fav1" />
 
@@ -180,8 +83,13 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="88dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/hom_fradel_and_"
-        android:textAppearance="@style/hom_fradel_and_"
+        android:text="Fradel and Spice"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="4"
         app:layout_constraintStart_toStartOf="@id/fav2"
         app:layout_constraintTop_toTopOf="@id/fav2" />
 
@@ -220,28 +128,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17"
         app:srcCompat="@drawable/notifications_unread" />
-
-    <EditText
-        android:id="@+id/search_bar"
-        android:layout_width="271dp"
-        android:layout_height="33dp"
-        android:hint="Search"
-        android:inputType="text"
-        android:textAppearance="@style/search_bar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="64dp" />
-
-    <TextView
-        android:id="@+id/result_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintTop_toBottomOf="@+id/search_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
