@@ -19,11 +19,15 @@ public class favorites extends AppCompatActivity {
     private ImageButton imagesched;
     private ImageButton imagefave;
     private ImageButton imageprof;
-    private ImageButton notif_btn;
+    private ImageButton notifButton;
     private ImageButton fav1;
     private ImageButton fav2;
-    private ImageButton favorite1;
-    private ImageButton favorite2;
+    private ImageButton favorite1Button;
+    private ImageButton favorite2Button;
+    private TextView homHeritageTa;
+    private TextView homFradelAnd;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,13 +41,13 @@ public class favorites extends AppCompatActivity {
         imagesched = findViewById(R.id.imagesched);
         imagefave = findViewById(R.id.imagefave);
         imageprof = findViewById(R.id.imageprof);
-        ImageButton notifButton = findViewById(R.id.notif_btn);
-        ImageButton favorite1Button = findViewById(R.id.favorite1);
-        ImageButton favorite2Button = findViewById(R.id.favorite2);
-        ImageButton fav1 = findViewById(R.id.fav1);
-        ImageButton fav2 = findViewById(R.id.fav2);
-        TextView homHeritageTa = findViewById(R.id.hom_heritage_ta);
-        TextView homFradelAnd = findViewById(R.id.hom_fradel_and_);
+        notifButton = findViewById(R.id.notif_btn);
+        favorite1Button = findViewById(R.id.favorite1);
+        favorite2Button = findViewById(R.id.favorite2);
+        fav1 = findViewById(R.id.fav1);
+        fav2 = findViewById(R.id.fav2);
+        homHeritageTa = findViewById(R.id.hom_heritage_ta);
+        homFradelAnd = findViewById(R.id.hom_fradel_and_);
 
         // Set a click listener on the search button
         searchButton.setOnClickListener(new View.OnClickListener() {
