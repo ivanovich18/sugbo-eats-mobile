@@ -2,19 +2,33 @@ package com.bscpe3g.sugboeats;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class ConfirmationActivity extends AppCompatActivity {
 
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     private ImageView backButton;
+    private static final String TAG = "ConfirmationActivity";  // Tag for logging
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,21 +109,52 @@ public class ConfirmationActivity extends AppCompatActivity {
             backIntent.putExtra("restaurant", restaurant);
             startActivity(backIntent);
         });
+
         Button makeReservationButton = findViewById(R.id.button_make_reservation2);
         makeReservationButton.setOnClickListener(v -> {
-            Intent successfulBookingIntent = new Intent(ConfirmationActivity.this, SuccessfulBookingActivity.class);
-            successfulBookingIntent.putExtra("firstName", firstName);
-            successfulBookingIntent.putExtra("lastName", lastName);
-            successfulBookingIntent.putExtra("phoneNumber", phoneNumber);
-            successfulBookingIntent.putExtra("emailAddress", emailAddress);
-            successfulBookingIntent.putExtra("customerAddress", customerAddress);
-            successfulBookingIntent.putExtra("reservationDate", reservationDate);
-            successfulBookingIntent.putExtra("reservationTime", reservationTime);
-            successfulBookingIntent.putExtra("settingType", settingType);
-            successfulBookingIntent.putExtra("numberOfGuests", numberOfGuests);
-            successfulBookingIntent.putExtra("specialRequests", specialRequests);
-            successfulBookingIntent.putExtra("restaurant", restaurant);
-            startActivity(successfulBookingIntent);
+
+            // Prepare Reservation Data (Map)
+            Map<String, Object> reservationData = new HashMap<>();
+            reservationData.put("firstName", firstName);
+            reservationData.put("lastName", lastName);
+            reservationData.put("phoneNumber", phoneNumber);
+            reservationData.put("emailAddress", emailAddress);
+            reservationData.put("customerAddress", customerAddress);
+            reservationData.put("reservationDate", reservationDate);
+            reservationData.put("reservationTime", reservationTime);
+            reservationData.put("settingType", settingType);
+            reservationData.put("numberOfGuests", numberOfGuests);
+            reservationData.put("specialRequests", specialRequests);
+
+            // Store restaurant data (if available)
+            if (restaurant != null) {
+                reservationData.put("restaurantName", restaurant.getName());
+                reservationData.put("restaurantLocation", restaurant.getLocation());
+                // If restaurant has ID in your data model, you can add it as well
+                // reservationData.put("restaurantId", restaurant.getId()); // Uncomment if applicable
+            }
+
+            // Add Reservation to Firestore
+            db.collection("reservations")
+                    .add(reservationData)
+                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Log.d(TAG, "Reservation added with ID: " + documentReference.getId());
+
+                            // Start SuccessfulBookingActivity after successful addition
+                            Intent successfulBookingIntent = new Intent(ConfirmationActivity.this, SuccessfulBookingActivity.class);
+                            successfulBookingIntent.putExtra("reservationId", documentReference.getId());
+                            startActivity(successfulBookingIntent);
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.w(TAG, "Error adding reservation", e);
+                            Toast.makeText(ConfirmationActivity.this, "Failed to make reservation. Please try again.", Toast.LENGTH_SHORT).show();
+                        }
+                    });
         });
     }
 }
