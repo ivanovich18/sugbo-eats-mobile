@@ -39,14 +39,29 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
+    <TextView
+        android:id="@+id/restaurants2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:text="Recommended for you"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_background" />
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rec_background">
+        app:layout_constraintTop_toBottomOf="@+id/restaurants2">
 
         <LinearLayout
             android:layout_width="wrap_content"
