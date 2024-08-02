@@ -1,4 +1,4 @@
-# Sugbo Eats
+# Sugbo Eats Mobile
 
 Sugbo Eats is a mobile application designed to simplify the process of reserving tables at restaurants in Cebu. Built using Java and Firebase, the app allows users to browse restaurants and make reservations with ease.
 
@@ -17,7 +17,7 @@ Sugbo Eats is a mobile application designed to simplify the process of reserving
 
 ## Screenshots
 
-![Sugbo Eats Screenshot](https://github.com/ivanovich18/sugbo-eats/assets/88656474/43529fe0-983d-4f75-a0b0-fc91647cd582)
+![image](https://github.com/user-attachments/assets/28eaf830-fc50-421d-b5d0-dd4e5bd6bab5)
 
 ## Installation
 
