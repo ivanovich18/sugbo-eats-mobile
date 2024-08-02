@@ -30,6 +30,31 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    // Custom task to replace tokens in google-services-template.json
+    task replaceGoogleServicesJson {
+        doLast {
+            def templateFile = file('google-services-template.json')
+            def outputFile = file('google-services.json')
+
+            ant.filterset(id: 'tokens', tokens: [
+                'FIREBASE_PROJECT_NUMBER': System.getenv("FIREBASE_PROJECT_NUMBER"),
+                'FIREBASE_PROJECT_ID': System.getenv("FIREBASE_PROJECT_ID"),
+                'FIREBASE_STORAGE_BUCKET': System.getenv("FIREBASE_STORAGE_BUCKET"),
+                'FIREBASE_APP_ID': System.getenv("FIREBASE_APP_ID"),
+                'FIREBASE_CLIENT_ID': System.getenv("FIREBASE_CLIENT_ID"),
+                'FIREBASE_API_KEY': System.getenv("FIREBASE_API_KEY")
+            ])
+
+            ant.copy(file: templateFile, tofile: outputFile) {
+                filterchain {
+                    filterset(refid: 'tokens')
+                }
+            }
+        }
+    }
+
+    preBuild.dependsOn replaceGoogleServicesJson
 }
 
 dependencies {
