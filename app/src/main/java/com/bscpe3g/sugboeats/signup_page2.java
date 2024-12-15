@@ -13,6 +13,8 @@ public class signup_page2 extends AppCompatActivity {
     private EditText emailText;
     private AppCompatButton button; // Assuming the continue button is an AppCompatButton
 
+<<<<<<< HEAD
+=======
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +25,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class signup_page2 extends AppCompatActivity {
 
+>>>>>>> ae52ffd404177f4216aaa01bab5fd2fb0da1a3fa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +70,8 @@ public class signup_page2 extends AppCompatActivity {
         finish(); // Optional: finish the current activity to remove it from the back stack
     }
 }
+<<<<<<< HEAD
+=======
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup_page2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -76,3 +81,4 @@ public class signup_page2 extends AppCompatActivity {
         });
     }
 }
+>>>>>>> ae52ffd404177f4216aaa01bab5fd2fb0da1a3fa

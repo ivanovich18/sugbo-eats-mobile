@@ -6,6 +6,12 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
+<<<<<<< HEAD
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
+public class signup_page1 extends AppCompatActivity {
+=======
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +22,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class signup_page1 extends AppCompatActivity {
 
 
+>>>>>>> ae52ffd404177f4216aaa01bab5fd2fb0da1a3fa
     private EditText editTextText;
     private EditText editTextText2;
     private AppCompatButton button;
@@ -72,6 +79,8 @@ public class signup_page1 extends AppCompatActivity {
         });
     }
 }
+<<<<<<< HEAD
+=======
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup_page1);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -81,3 +90,4 @@ public class signup_page1 extends AppCompatActivity {
         });
     }
 }
+>>>>>>> ae52ffd404177f4216aaa01bab5fd2fb0da1a3fa
